@@ -20,6 +20,8 @@ On the git ignore we add:
        */xcuserdata/*
        .DS_Store
 
+ *Suggestion: Make a few more commits to later show that, when cloning a repo, the full history goes with it.*
+ 
 ## Step 2 - User 1 - Sharing
 
 The user wants to share its work with the world so he creates a bare repo on its public folder and push its project to it.
@@ -76,6 +78,31 @@ Inform User 1 about your repo public folder
 ## Step 6 - Working
 
 Now every developer can modify its code, add, commit and push to its own public repo (origin). It can as well pull from the other developers remotes. If it pulls the changes will be commited, but it is better to fetch and compare the remote with your branch or create a new branch from the remote to make changes. Remember that you can not commit to to a remote repo, in case you want to make changes you can branch or create a patch.
+
+
+## Step 7 - Parallel commits
+
+Each developer introduces changes and commits them, in a few commits
+
+## Step 8 - Fetch/Merge and Pull
+
+One of the developers does a pull, while the other shows the steps separately: fetch and merge. No conflict arises as they are in different parts
+
+## Step 9 - More parallel commits
+
+Now both developers add a method to the same class, at the end, thus ensuring a conflict at merge time
+
+## Step 10 - Solving conflicts
+
+Both devs do a fetch, and attempt to merge. A conflict pops up, and each one resolves it and pushes back the fix
+
+## Step 11 - Just some more commits
+
+Both devs go on adding changes and committing them
+
+## Step 12 - Rebase
+
+This time, instead of merging changes, to avoid forks in the history tree, the changes are incorporated with a rebase
 
 
 # Demo 2 A good process to follow (Git Flow like process)
