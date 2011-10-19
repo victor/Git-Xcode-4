@@ -140,4 +140,26 @@ lgs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all.
 
 #
-# Trick - The correct way to commen commits.
+# Trick - The correct way to comment commits.
+
+Refer to Pro Git (free book by @schacon):
+
+    As a general rule, your messages should start with a single line that’s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation. The Git project requires that the more detailed explanation include your motivation for the change and contrast its implementation with previous behavior — this is a good guideline to follow. It’s also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of “I added tests for” or “Adding tests for,” use “Add tests for.”
+
+Here’s a template:
+
+    Short (50 chars or less) summary of changes
+
+	More detailed explanatory text, if necessary.  Wrap it to about 72
+	characters or so.  In some contexts, the first line is treated as the
+	subject of an email and the rest of the text as the body.  The blank
+	line separating the summary from the body is critical (unless you omit
+	the body entirely); tools like rebase can get confused if you run the
+	two together.
+
+	Further paragraphs come after blank lines.
+
+	- Bullet points are okay, too
+
+	- Typically a hyphen or asterisk is used for the bullet, preceded by a
+	  single space, with blank lines in between, but conventions vary here
