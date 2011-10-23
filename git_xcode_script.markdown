@@ -120,6 +120,11 @@ Show the concept of resetting the HEAD pointer. Explain the various types of res
 Introduce the concept of branches as pointers, and the garbage collector. If the garbage collector has not cleaned up a commit, we can restore it even if we have no pointer to it. Show git reflog
 
 
+## Ammend
+
+Introduce and show the concept of ammending the last commit
+
+
 # Demo 2 A good process to follow (Git Flow like process)
 
 With git you can do whatever you want, but it is a good idea to follow some rules to have a very clean, and useful environment to never loose track. Here are some rules:
