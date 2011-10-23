@@ -98,11 +98,11 @@ Both devs do a fetch, and attempt to merge. A conflict pops up, and each one res
 
 ## Step 11 - Just some more commits
 
-Both devs go on adding changes and committing them
+Both devs go on adding changes and committing them. This could be a good time to introduce partial commits.
 
 ## Step 12 - Rebase
 
-This time, instead of merging changes, to avoid forks in the history tree, the changes are incorporated with a rebase
+This time, instead of merging changes, to avoid gratuitous forks in the history tree, the changes are incorporated with a rebase
 
 
 # Demo 2 A good process to follow (Git Flow like process)
@@ -118,7 +118,7 @@ With git you can do whatever you want, but it is a good idea to follow some rule
 # Demo 3 ...
 
 
-# Trick - Create a path to send by e-mail
+# Trick - Create a pacth to send by e-mail
 
 A nice feature is that you can modify some code, create a patch and send to another person by e-mail. There are lots of ways to do that. Here are somes:
 
