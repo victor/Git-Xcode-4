@@ -115,6 +115,10 @@ Later, delete a branch
 
 Show the concept of resetting the HEAD pointer. Explain the various types of reset.
 
+## Reflog
+
+Introduce the concept of branches as pointers, and the garbage collector. If the garbage collector has not cleaned up a commit, we can restore it even if we have no pointer to it. Show git reflog
+
 
 # Demo 2 A good process to follow (Git Flow like process)
 
