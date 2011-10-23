@@ -43,6 +43,8 @@ Connect to the user 1 public repo (mount a unit) and clone from the repo.
 
        git clone /Volumes/josealobato/Public/josealobato-gitrepos.git  <- test this, not sure about the path.
 
+Explain git status, and the instructions it provides to undo changes.
+
 ## Step 4 - User 2 - Create your own Public Bare to share
 
 Here the user have to create a share the bare as before.
