@@ -106,6 +106,11 @@ Both devs go on adding changes and committing them. This could be a good time to
 
 This time, instead of merging changes, to avoid gratuitous forks in the history tree, the changes are incorporated with a rebase
 
+## Branch
+
+Introduce the concept of branches. Create a couple of branches. Add commits
+Later, delete a branch
+
 
 # Demo 2 A good process to follow (Git Flow like process)
 
