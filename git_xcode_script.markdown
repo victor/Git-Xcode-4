@@ -81,22 +81,29 @@ Inform User 1 about your repo public folder
 
 Now every developer can modify its code, add, commit and push to its own public repo (origin). It can as well pull from the other developers remotes. If it pulls the changes will be commited, but it is better to fetch and compare the remote with your branch or create a new branch from the remote to make changes. Remember that you can not commit to to a remote repo, in case you want to make changes you can branch or create a patch.
 
+Jose adds content. Victor changes styling.
 
 ## Step 7 - Parallel commits
 
-Each developer introduces changes and commits them, in a few commits
+Each developer introduces changes and commits them, in a few commits.
+
 
 ## Step 8 - Fetch/Merge and Pull
 
 One of the developers does a pull, while the other shows the steps separately: fetch and merge. No conflict arises as they are in different parts
+Jose does 2-step merge. Victor does pull.
+
+
 
 ## Step 9 - More parallel commits
 
-Now both developers add a method to the same class, at the end, thus ensuring a conflict at merge time
+Now both developers add a method to the same class, at the end, thus ensuring a conflict at merge time.
+
+Add method at end of controller.
 
 ## Step 10 - Solving conflicts
 
-Both devs do a fetch, and attempt to merge. A conflict pops up, and each one resolves it and pushes back the fix
+Both devs do a fetch, and attempt to merge. A conflict pops up, and each one resolves it ( Show all merge approaches in turn.) and pushes back the fix
 
 ## Step 11 - Just some more commits
 
@@ -106,23 +113,41 @@ Both devs go on adding changes and committing them. This could be a good time to
 
 This time, instead of merging changes, to avoid gratuitous forks in the history tree, the changes are incorporated with a rebase
 
+## Interactive rebase
+
+Jose shows the interactive rebase
+
+
 ## Branch
 
 Introduce the concept of branches. Create a couple of branches. Add commits
 Later, delete a branch
 
+3 cases: fast-forward, normal merge, non-fast-forward
+
+### stash
+When switching branches you may have changes in process. Stash allows you to save them.
+
+
 ## Reset
 
 Show the concept of resetting the HEAD pointer. Explain the various types of reset.
 
-## Reflog
 
-Introduce the concept of branches as pointers, and the garbage collector. If the garbage collector has not cleaned up a commit, we can restore it even if we have no pointer to it. Show git reflog
 
 
 ## Ammend
 
 Introduce and show the concept of ammending the last commit
+
+
+
+
+
+## Reflog
+
+Introduce the concept of branches as pointers, and the garbage collector. If the garbage collector has not cleaned up a commit, we can restore it even if we have no pointer to it. Show git reflog
+
 
 
 # Demo 2 A good process to follow (Git Flow like process)
