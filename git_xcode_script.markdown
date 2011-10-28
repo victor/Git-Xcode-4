@@ -98,7 +98,42 @@ Back to the working folder, add the remote to the bare
 
 ## Step 6 - Jose PULL changes from victor and show log and tree.
 
-## Step 7 - Jose Make some changes while Victor add more comment on Pull, Fetch and Merge.
+## Step 7 - Jose Make some changes while Victor add more comment on Pull, Fetch and Merge. ##
+
+Changes on Data controller:
+
+	play = [[Play alloc] init];
+	play.title = @"Futurama";
+	play.genre = @"Comedy";
+	  [dateComponents setYear:1999];
+	play.date = [calendar dateFromComponents:dateComponents];
+	  characters = [[NSArray alloc] initWithObjects:@"Fry", @"Leela", @"Bender", @"Farnswort", @"Amy Wong", @"Hermes", nil];
+	  play.characters = characters;
+	[characters release];
+	[playList addObject:play];
+	  [play release];
+
+	
+	play = [[Play alloc] init];
+	play.title = @"The Simpsons";
+	play.genre = @"Comedy";
+    [dateComponents setYear:1987];
+	play.date = [calendar dateFromComponents:dateComponents];
+    characters = [[NSArray alloc] initWithObjects:@"Homer", @"Marge", @"Bart", @"Lisa", @"Maggie", nil];
+    play.characters = characters;
+	[characters release];
+	[playList addObject:play];
+    [play release];
+
+
+RootViewController line 91
+	cell.textLabel.textColor = [UIColor blueColor];
+
+
+change cell style (line 89) to UITableViewCellStyleSubtitle and add on line 97: 
+	cell.detailTextLabel.text = playAtIndex.genre;
+
+
 
 ## Step 8 - Victor fetch changes and ...
 
@@ -113,7 +148,21 @@ Back to the working folder, add the remote to the bare
 
 ## Step 10 - Victor creates a branch and add a small change.
 ## Step 11 - Victor add some changes including apple docs while jose explains the rebase concept.
-## Step 12 - Victor rebase changes on to a branch.
+## Step 12 - Victor rebase changes on to a branch. ##
+
+# Amend #
+
+## Step 13 - modify the comment on the last commit. ##
+
+
+# Interactive Rebase #
+
+## Step 14 - Jose will add a couple of commits (simple modificatios) ##
+
+On this commits simply undo some of the previous
+
+
+
 
 
 -------------------------------------------------------------------------------------------------
