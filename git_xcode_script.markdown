@@ -1,10 +1,126 @@
 NOTE: As long as no project has been selected, I'll call the project XXX.
 
-# Demo 1 Working on a team without central repo
+# Demo 1 Working on a team without and with a central repo
 
 NOTE: go drawing on a board as the demo goes.
 
-## Step 1 - User 1 - adding to git
+
+## Step 0 - Introduction
+
+* Intro of Victor
+* Intro of Jose
+
+* Question the audience (Always positive questions)
+	- How many of you use GIT as the control version for your software.
+	- How many of you work in a team of more that 3 people.
+  - How many of you have used a --bare repository.
+ 
+## Step 0.1 - Git Basics (Jose)
+
+* Slide with the three areas of git
+
+* Config
+
+Explain it.
+
+## Step 0.2 - Git Distributed (Victor)
+
+* Slide with the distributed work flow.
+
+Explanation about the fundamentals of the destributed work.
+
+## Step 1 - Jose Creates its repo and its bare while explaining it.
+
+* Create the local repo where the code is (/Documents/nscodervng11/SimpleDrillDown)
+* Add the git ignore:
+
+				# Exclude the build directory
+				build/*
+				 
+				# Exclude temp nibs and swap files
+				*~.nib
+				*.swp
+				 
+				# Exclude OS X folder attributes
+				.DS_Store
+				 
+				# Exclude user-specific XCode 3 and 4 files
+				*.mode1
+				*.mode1v3
+				*.mode2v3
+				*.perspective
+				*.perspectivev3
+				*.pbxuser
+				*.xcworkspace
+				xcuserdata
+
+* Commit.
+
+Lets create the bare repository:
+
+				take ~/Public/josealobato-gitrepos/SimpleDrillDown.git
+				git init --bare
+
+Back to the working folder, add the remote to the bare
+
+				git remote add localpublic ~/Public/josealobato-gitrepos/SimpleDrillDown.git
+				cd push localpublic master
+
+* Inform Victor about the public report
+
+## Step 2 - Victor Clone jose's repo
+
+				cd /Documents/nscodervng11
+				git clone /Volume/josembp/josealobato-gitrepos/SimpleDrillDown.git
+
+* Create the bare: 
+
+				take ~/Public/victor-gitrepos/SimpleDrillDown.git
+				git init --bare
+
+* Review the remotes to add the public and the remote to jose's public (call it jose)
+
+				git remote add localpublic ~/Public/victor-gitrepos/SimpleDrillDown.git
+				cd push localpublic master
+
+* Inform Jose about
+
+## Step 3 - Jose add the victors public remote
+
+				git remote add victor /Volume/Documents/Public/victor-gitrepos/SimpleDrillDown.git
+
+
+# PULL AND FETCH+MERGE
+
+## Step 4 - Victor make some changes while Jose refresh the comcept of Pull, Fetch and Merge.
+
+## Step 5 - Victor push changes to its public.
+
+## Step 6 - Jose PULL changes from victor and show log and tree.
+
+## Step 7 - Jose Make some changes while Victor add more comment on Pull, Fetch and Merge.
+
+## Step 8 - Victor fetch changes and ...
+
+* log the changes in the remote branch.
+* diff one of the changes. 
+* merge the changes into its master branch.
+
+## Step 9 - Victor push its changes to the public and Jose pulls from victors.
+
+
+# REBASE
+
+## Step 10 - Victor creates a branch and add a small change.
+## Step 11 - Victor add some changes including apple docs while jose explains the rebase concept.
+## Step 12 - Victor rebase changes on to a branch.
+
+
+-------------------------------------------------------------------------------------------------
+
+## Step 1 - User 1 - adding to git or getting it from github
+
+This is already done on the Github so explain it.
 
 The user has already a project so he forget to include it in git so he does it now:
 
@@ -26,13 +142,13 @@ On the git ignore we add:
 
 The user wants to share its work with the world so he creates a bare repo on its public folder and push its project to it.
 
-       cd ~/Public/josealobato-gitrepos/
-       git init --bare XXX  <- explain --bare
+       take ~/Public/josealobato-gitrepos/SimpleDrillDown.git
+       git init --bare <- explain --bare
 
 Move to the location of the project and push to the bare repo
 
-       cd ~/Documents/repos/XXX
- git remote add origin ~/Public/josealobato-gitrepos/
+       cd ~/Documents/repos/SimpleDrillDown
+       git remote add jalpublic ~/Public/josealobato-gitrepos/SimpleDrillDown.git
        cd push origin master
 
 Call your team mate and tell him about the path of the bare public repo, and tell him to work on the project
@@ -54,9 +170,9 @@ Here the user have to create a share the bare as before.
 
 Add your public as your remote and push to it.
 
-       cd ~/Documents/repos/XXX
- git remote add origin ~/Public/victorjalencas-gitrepos/
-       cd push origin master
+       	cd ~/Documents/repos/XXX
+ 				git remote add victorpublic ~/Public/victorjalencas-gitrepos/
+       	cd push origin master
 
 
 Inform User 1 about your repo
@@ -208,3 +324,8 @@ Here’s a template:
 
 	- Typically a hyphen or asterisk is used for the bullet, preceded by a
 	  single space, with blank lines in between, but conventions vary here
+
+
+
+Regards
+Jose Lobato, Mobile Dev.- R&D, T +43-2236-27551-515
